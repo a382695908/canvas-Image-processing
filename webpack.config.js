@@ -12,7 +12,7 @@ module.exports = {
 	},
 	output: {
 		path: BUILD_PATH,
-		publicPath: '/dist/',
+		publicPath: './dist/',
 		filename: 'bundle.js'
 	},
 	devServer: {
@@ -35,7 +35,8 @@ module.exports = {
 			}
 		}, {
 			test: /\.(png|jpg)$/,
-			loader: 'file-loader'
+			loader: 'file-loader',
+			include: APP_PATH
 		}],
 	},
 	plugins: [

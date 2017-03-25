@@ -52,6 +52,7 @@ import fastclick from './fastclick'
 		cacheImg(params.img,function(){
 			var degree = 0,
 				drawWidth, drawHeight, width, height
+				console.log(params.data)
 			//原始宽高
 			drawWidth = width = params.data.PixelXDimension ? params.data.PixelXDimension : this.naturalWidth;
 			drawHeight = height = params.data.PixelYDimension ? params.data.PixelYDimension : this.naturalHeight;

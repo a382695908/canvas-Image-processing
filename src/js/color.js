@@ -23,7 +23,6 @@ document.addEventListener('DOMContentLoaded', function(e) {
 			x = t.pageX - left,
 			y = t.pageY - top
 		var d = Math.sqrt(Math.pow((x - 100), 2) + Math.pow((y - 100), 2))
-		console.log(d)
 		if (!(d >= 80 & d <= 100)) {
 			return false;
 		}
