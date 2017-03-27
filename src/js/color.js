@@ -11,18 +11,20 @@ document.addEventListener('DOMContentLoaded', function(e) {
 		top = oCan.offsetTop,
 		left = oCan.offsetLeft
 
+		console.log(imgSrc)
 
 	var img = new Image();
 	img.onload = function() {
 		ctx.drawImage(this, 0, 0, 200, 200)
 	}
-	img.src = imgSrc;
+	img.src = /*'http://omj3gjq3r.bkt.clouddn.com/wheel.png'*/imgSrc;
 	//width:20
 	function pick(e) {
 		var t = e.touches[0],
 			x = t.pageX - left,
 			y = t.pageY - top
 		var d = Math.sqrt(Math.pow((x - 100), 2) + Math.pow((y - 100), 2))
+
 		if (!(d >= 80 & d <= 100)) {
 			return false;
 		}
