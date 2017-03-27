@@ -36,7 +36,9 @@ module.exports = {
 		}, {
 			test: /\.(png|jpg)$/,
 			loader: 'file-loader',
-			include: APP_PATH
+			query: {
+        name: '/[name].[ext]'
+      }
 		}],
 	},
 	plugins: [
